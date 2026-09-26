@@ -1,0 +1,73 @@
+<!-- ===== 記事・お知らせ（article.html） ===== -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap');
+.hj { --ink:#1F2A44; --sky:#EAF4FB; --blue:#2E7FC1;
+  font-family:'Zen Maru Gothic','Hiragino Maru Gothic ProN','Meiryo',sans-serif;
+  color:var(--ink); line-height:1.9; background:#fff; }
+.hj * { box-sizing:border-box; }
+.hj a { color:var(--blue); }
+.hj-wrap { max-width:800px; margin:0 auto; padding:0 20px; }
+.hj-sec { padding:60px 0; }
+.hj p { margin:0 0 1em; }
+
+.hj-nav { display:flex; align-items:center; justify-content:space-between; padding:20px 0; max-width:1040px; margin:0 auto; }
+.hj-nav .logo { font-weight:900; font-size:1.05rem; text-decoration:none; color:var(--ink); }
+.hj-nav ul { list-style:none; display:flex; gap:24px; margin:0; padding:0; flex-wrap:wrap; }
+.hj-nav a:not(.logo) { text-decoration:none; color:var(--ink); font-weight:700; font-size:.92rem; }
+.hj-navwrap { padding:0 20px; }
+
+.hj-foot { background:#132038; color:#cfd8e3; padding:48px 0 28px; font-size:.85rem; }
+.hj-foot .inner { max-width:1040px; margin:0 auto; padding:0 20px; }
+.hj-foot .name { color:#fff; font-weight:700; margin-bottom:16px; }
+.hj-foot ul { list-style:none; display:flex; flex-wrap:wrap; gap:16px 24px; margin:0 0 20px; padding:0; }
+.hj-foot a { color:#cfd8e3; text-decoration:none; }
+.hj-foot .copy { margin-top:24px; color:#7f8ba3; }
+
+.hj-pagehero { background:var(--sky); padding:52px 0; text-align:center; }
+.hj-pagehero h1 { font-size:clamp(1.6rem,4.5vw,2.4rem); font-weight:900; margin:0; }
+
+.hj-empty { border:2px dashed #cfd8e3; border-radius:16px; padding:36px; text-align:center; color:#5b6478; }
+</style>
+
+<div class="hj">
+
+  <nav class="hj-navwrap">
+    <div class="hj-nav">
+      <a class="logo" href="index.html">Habilis Japan</a>
+      <ul>
+        <li><a href="about.html">すぐ分かるHabilis</a></li>
+        <li><a href="article.html">記事・お知らせ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hj-pagehero">
+    <h1>記事・お知らせ</h1>
+  </section>
+
+  <section class="hj-sec">
+    <div class="hj-wrap">
+      <div class="hj-empty">
+        <p style="margin:0">この一覧は、WordPress側の投稿（ブログ記事）を並べる場所です。<br>記事を投稿すると、ここに新着順で表示されるようになります。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="hj-foot">
+    <div class="inner">
+      <div class="name">一般社団法人ハビリスジャパン</div>
+      <ul>
+        <li><a href="about.html">すぐ分かるHabilis</a></li>
+        <li><a href="activity.html">活動内容</a></li>
+        <li><a href="join-individuals.html">個人の方へ</a></li>
+        <li><a href="prosthesis.html">義肢とは</a></li>
+        <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+        <li><a href="member-policy.html">会員規約</a></li>
+      </ul>
+      <div class="copy">© Habilis Japan All Rights Reserved</div>
+    </div>
+  </footer>
+
+</div>
+<!-- ===== ここまで ===== -->

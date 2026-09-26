@@ -1,0 +1,189 @@
+<!-- ===== 個人の方へ（join-individuals.html） ===== -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap');
+.hj { --ink:#1F2A44; --sky:#EAF4FB; --blue:#2E7FC1; --sun:#FFC93C; --leaf:#3FA66B;
+  font-family:'Zen Maru Gothic','Hiragino Maru Gothic ProN','Meiryo',sans-serif;
+  color:var(--ink); line-height:1.9; background:#fff; }
+.hj * { box-sizing:border-box; }
+.hj img { max-width:100%; height:auto; display:block; border-radius:24px; }
+.hj a { color:var(--blue); }
+.hj-wrap { max-width:1040px; margin:0 auto; padding:0 20px; }
+.hj-sec { padding:72px 0; }
+.hj h2 { font-size:clamp(1.5rem,3.5vw,2.1rem); font-weight:900; margin:0 0 24px; line-height:1.4; }
+.hj p { margin:0 0 1em; max-width:38em; }
+
+.hj-nav { display:flex; align-items:center; justify-content:space-between; padding:20px 0; }
+.hj-nav .logo { font-weight:900; font-size:1.05rem; text-decoration:none; color:var(--ink); }
+.hj-nav ul { list-style:none; display:flex; gap:24px; margin:0; padding:0; flex-wrap:wrap; }
+.hj-nav a:not(.logo) { text-decoration:none; color:var(--ink); font-weight:700; font-size:.92rem; }
+.hj-nav a:not(.logo):hover { color:var(--blue); }
+
+.hj-foot { background:#132038; color:#cfd8e3; padding:48px 0 28px; font-size:.85rem; }
+.hj-foot .name { color:#fff; font-weight:700; margin-bottom:16px; }
+.hj-foot ul { list-style:none; display:flex; flex-wrap:wrap; gap:16px 24px; margin:0 0 20px; padding:0; }
+.hj-foot a { color:#cfd8e3; text-decoration:none; }
+.hj-foot a:hover { color:#fff; }
+.hj-foot .copy { margin-top:24px; color:#7f8ba3; }
+
+/* ページヒーロー */
+.hj-pagehero { background:var(--sky); padding:56px 0 0; }
+.hj-pagehero-grid { display:grid; grid-template-columns:1.1fr 1fr; gap:40px; align-items:center; }
+@media (max-width:720px){ .hj-pagehero-grid { grid-template-columns:1fr; } }
+.hj-pagehero h1 { font-size:clamp(1.7rem,5vw,2.6rem); font-weight:900; margin:0 0 14px; }
+.hj-pagehero .sub { font-weight:700; font-size:1.02rem; }
+.hj-anchors { display:flex; gap:20px; flex-wrap:wrap; margin-top:20px; padding:16px 0 0; font-size:.9rem; }
+.hj-anchors a { font-weight:700; text-decoration:none; }
+.hj-pagehero-photo img { border-radius:0; }
+
+/* 支援ブロック（画像＋テキスト） */
+.hj-split { display:grid; grid-template-columns:1fr 1.1fr; gap:44px; align-items:center; }
+@media (max-width:760px){ .hj-split { grid-template-columns:1fr; } }
+.hj-split.alt { background:var(--sky); }
+
+.hj-benefits { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:20px; margin:24px 0 28px; }
+.hj-benefits .b { text-align:center; font-size:.85rem; }
+.hj-benefits .b img { border-radius:14px; margin-bottom:10px; }
+.hj-note { font-size:.82rem; color:#5b6478; }
+
+.hj-btn { display:inline-block; padding:14px 32px; border-radius:999px; font-weight:700; text-decoration:none;
+  background:var(--sun); color:var(--ink) !important; }
+.hj-btn:hover { filter:brightness(.96); }
+
+/* 参加カード */
+.hj-cards2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:28px; margin-top:32px; }
+.hj-cards2 h3 { font-size:1.05rem; margin:14px 0 8px; }
+.hj-cards2 p { font-size:.9rem; }
+
+/* SNS・チラシ */
+.hj-sns-links { display:flex; gap:16px; flex-wrap:wrap; margin-top:16px; }
+.hj-sns-links a { font-weight:700; text-decoration:none; padding:10px 22px; border-radius:999px; border:2px solid var(--ink); color:var(--ink); }
+.hj-sns-links a:hover { background:var(--ink); color:#fff !important; }
+</style>
+
+<div class="hj">
+
+  <!-- ナビ -->
+  <nav class="hj-nav hj-wrap">
+    <a class="logo" href="index.html">Habilis Japan</a>
+    <ul>
+      <li><a href="about.html">すぐ分かるHabilis</a></li>
+      <li><a href="join-families.html">ご家族の方へ</a></li>
+      <li><a href="join-individuals.html">個人の方へ</a></li>
+      <li><a href="join-corporations.html">法人の方へ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ページヒーロー -->
+  <section class="hj-pagehero">
+    <div class="hj-wrap hj-pagehero-grid">
+      <div>
+        <h1>Join Habilis　個人の方へ</h1>
+        <p class="sub">子どもたちが、自分らしさに誇りを持って、自分らしく成長できる社会の実現のために。</p>
+        <p>Habilis Japan の活動には、皆さまそれぞれに合った方法で参加・ご支援いただくことができます。</p>
+        <div class="hj-anchors">
+          <a href="#member">会員になって応援</a>
+          <a href="#donate">寄付で応援</a>
+          <a href="#skill">活動に参加</a>
+          <a href="#sns">SNS／メルマガ</a>
+        </div>
+      </div>
+      <div class="hj-pagehero-photo">
+        <img src="https://placehold.co/560x420/EAF4FB/1F2A44?text=Photo" alt="よーい、どん！と走り出す子ども">
+      </div>
+    </div>
+  </section>
+
+  <!-- 会員になる -->
+  <section class="hj-sec" id="member">
+    <div class="hj-wrap hj-split">
+      <div><img src="https://placehold.co/480x360/EAF4FB/1F2A44?text=Photo" alt="その子らしく成長できる未来のために"></div>
+      <div>
+        <h2>会員になる</h2>
+        <p>すべての子どもたちが、自分に合った方法で、自分らしく成長できる社会の実現には、皆様のご支援が必要です。年間3,000円（1口から）をご支援いただく「ハビリスサポーター」を募集しています。</p>
+
+        <p><b>サポーターの方には</b></p>
+        <div class="hj-benefits">
+          <div class="b"><img src="https://placehold.co/200x140/ffffff/1F2A44?text=Photo" alt="年次活動報告書">年次活動報告書</div>
+          <div class="b"><img src="https://placehold.co/200x140/ffffff/1F2A44?text=Badge" alt="バッヂ">バッヂを贈呈</div>
+          <div class="b"><img src="https://placehold.co/200x140/ffffff/1F2A44?text=Book" alt="オリジナル絵本">オリジナル絵本を贈呈</div>
+        </div>
+        <p class="hj-note">その他：ご希望者のみ、活動報告書等への氏名掲載（年間12,000円以上の会費納入が条件となります）</p>
+
+        <a class="hj-btn" href="support-supporter.html">「ハビリスサポーター」に申し込む</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 寄付をする -->
+  <section class="hj-sec hj-split alt" id="donate">
+    <div class="hj-wrap hj-split">
+      <div>
+        <h2>寄付をする</h2>
+        <p><b>今の思いを届ける「ご寄付」</b></p>
+        <p>ご自由な金額・回数でご寄付いただけます。</p>
+        <a class="hj-btn" href="#">今の思いを届ける「ご寄付」に申し込む</a>
+      </div>
+      <div><img src="https://placehold.co/480x340/ffffff/1F2A44?text=Photo" alt="寄付イメージ"></div>
+    </div>
+  </section>
+
+  <!-- 活動に参加する -->
+  <section class="hj-sec" id="skill">
+    <div class="hj-wrap">
+      <h2>Habilis Japan の活動に参加する</h2>
+      <div class="hj-cards2">
+        <div>
+          <img src="https://placehold.co/500x320/EAF4FB/1F2A44?text=Photo" alt="スキルを提供するボランティア">
+          <h3>スキルを提供する</h3>
+          <p>Habilis Japan の活動を一緒にサポートしてくれる方を募集しています。「スキルを非営利団体の活動に活かしたい」「子どもたちの成長をサポートしたい」といった方、子どもたちのために、お時間を使ってみませんか？</p>
+          <a class="hj-link-more" href="#">スキルメンバー登録する</a>
+        </div>
+        <div>
+          <img src="https://placehold.co/500x320/EAF4FB/1F2A44?text=Photo" alt="イベントボランティアの様子">
+          <h3>イベントにボランティア参加する</h3>
+          <p>イベントでは、イベントボランティアスタッフが多くの役割をはたしています。イベント運営を手伝ってくださる方、お待ちしております。</p>
+          <a class="hj-link-more" href="#">イベントボランティア登録する</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 知る・広める -->
+  <section class="hj-sec" id="sns" style="background:var(--sky)">
+    <div class="hj-wrap">
+      <h2>Habilis Japan を知る・広める</h2>
+      <p><b>SNSをフォローする／メールマガジンを読む</b><br>イベントや活動について、SNSやメールマガジンでお届けしています。ぜひフォロー、登録をお願いします。</p>
+      <div class="hj-sns-links">
+        <a href="https://www.facebook.com/habilisjapan/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/habilisjapan/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#">Mail Magazine</a>
+      </div>
+
+      <p style="margin-top:36px"><b>チラシ・パンフレットを配布する</b><br>ご請求いただいた資料は、貴社の社員の方に読んでいただいたり、オフィスに置いていただくことも可能です。ぜひ、Habilis Japanの活動について広めていただくお力添えをいただけますと幸いです。</p>
+      <a class="hj-btn" href="contact.html">資料請求をする</a>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="hj-foot">
+    <div class="hj-wrap">
+      <div class="name">一般社団法人ハビリスジャパン</div>
+      <ul>
+        <li><a href="about.html">すぐ分かるHabilis</a></li>
+        <li><a href="activity.html">活動内容</a></li>
+        <li><a href="join-individuals.html">個人の方へ</a></li>
+        <li><a href="join-families.html">ご家族の方へ</a></li>
+        <li><a href="join-corporations.html">法人の方へ</a></li>
+        <li><a href="prosthesis.html">義肢とは</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+        <li><a href="member-policy.html">会員規約</a></li>
+        <li><a href="https://www.facebook.com/habilisjapan/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/habilisjapan/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+      <div class="copy">© Habilis Japan All Rights Reserved</div>
+    </div>
+  </footer>
+
+</div>
+<!-- ===== ここまで ===== -->

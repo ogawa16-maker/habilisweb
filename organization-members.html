@@ -1,0 +1,93 @@
+<!-- ===== スタッフ紹介（organization-members.html） ===== -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap');
+.hj { --ink:#1F2A44; --sky:#EAF4FB; --blue:#2E7FC1; --sun:#FFC93C; --leaf:#3FA66B;
+  font-family:'Zen Maru Gothic','Hiragino Maru Gothic ProN','Meiryo',sans-serif;
+  color:var(--ink); line-height:1.9; background:#fff; }
+.hj * { box-sizing:border-box; }
+.hj a { color:var(--blue); }
+.hj-wrap { max-width:1040px; margin:0 auto; padding:0 20px; }
+.hj-sec { padding:56px 0; }
+.hj p { margin:0 0 1em; max-width:44em; }
+
+.hj-nav { display:flex; align-items:center; justify-content:space-between; padding:20px 0; }
+.hj-nav .logo { font-weight:900; font-size:1.05rem; text-decoration:none; color:var(--ink); }
+.hj-nav ul { list-style:none; display:flex; gap:24px; margin:0; padding:0; flex-wrap:wrap; }
+.hj-nav a:not(.logo) { text-decoration:none; color:var(--ink); font-weight:700; font-size:.92rem; }
+.hj-nav a:not(.logo):hover { color:var(--blue); }
+
+.hj-foot { background:#132038; color:#cfd8e3; padding:48px 0 28px; font-size:.85rem; }
+.hj-foot .name { color:#fff; font-weight:700; margin-bottom:16px; }
+.hj-foot ul { list-style:none; display:flex; flex-wrap:wrap; gap:16px 24px; margin:0 0 20px; padding:0; }
+.hj-foot a { color:#cfd8e3; text-decoration:none; }
+.hj-foot a:hover { color:#fff; }
+.hj-foot .copy { margin-top:24px; color:#7f8ba3; }
+
+.hj-pagehero { background:var(--sky); padding:52px 0; text-align:center; }
+.hj-pagehero h1 { font-size:clamp(1.6rem,4.5vw,2.4rem); font-weight:900; margin:0 0 12px; }
+.hj-pagehero p { max-width:40em; margin:0 auto; }
+
+.hj-members { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:28px; margin-top:8px; }
+.hj-member { text-align:center; font-size:.92rem; }
+.hj-avatar { width:100%; aspect-ratio:1; border-radius:50%; background:var(--sky); display:flex; align-items:center;
+  justify-content:center; font-size:1.6rem; font-weight:900; color:var(--blue); margin-bottom:10px; }
+.hj-member .role { font-size:.82rem; color:#5b6478; }
+</style>
+
+<div class="hj">
+
+  <nav class="hj-nav hj-wrap">
+    <a class="logo" href="index.html">Habilis Japan</a>
+    <ul>
+      <li><a href="about.html">すぐ分かるHabilis</a></li>
+      <li><a href="organization-history.html">沿革</a></li>
+      <li><a href="organization-members.html">スタッフ紹介</a></li>
+      <li><a href="join-individuals.html">個人の方へ</a></li>
+    </ul>
+  </nav>
+
+  <section class="hj-pagehero">
+    <div class="hj-wrap">
+      <h1>スタッフ紹介</h1>
+      <p>Habilis JapanはVisionに共感したメンバーと、義肢を専門領域に持つ医師・セラピスト・義肢装具士のスタッフが参加し、活動を行っています。</p>
+    </div>
+  </section>
+
+  <section class="hj-sec">
+    <div class="hj-wrap hj-members">
+      <div class="hj-member"><div class="hj-avatar">藤</div>藤原 清香（さーちゃん）<div class="role">医師</div></div>
+      <div class="hj-member"><div class="hj-avatar">野</div>野口 智子（ぐっさん）<div class="role">作業療法士</div></div>
+      <div class="hj-member"><div class="hj-avatar">岡</div>岡田 航太（おかでぃ）<div class="role">保険 商品開発</div></div>
+      <div class="hj-member"><div class="hj-avatar">竹</div>竹田 明香（あっちゃん）<div class="role">ITコンサルタント</div></div>
+      <div class="hj-member"><div class="hj-avatar">小</div>小室 善寛（よっしー）<div class="role">保険 顧客サービス</div></div>
+      <div class="hj-member"><div class="hj-avatar">山</div>山崎 美和（みわっち）<div class="role">企業人事・社会保険労務士</div></div>
+      <div class="hj-member"><div class="hj-avatar">平</div>平松 裕子（かとぱ）<div class="role">メーカー事務</div></div>
+      <div class="hj-member"><div class="hj-avatar">近</div>近藤 雅之（まさ）<div class="role">研究開発／事業企画</div></div>
+      <div class="hj-member"><div class="hj-avatar">山</div>山口 宗人（むーさん）<div class="role">環境コンサル</div></div>
+      <div class="hj-member"><div class="hj-avatar">鐙</div>鐙塚 翔太（Abu）<div class="role">保険 商品開発</div></div>
+      <div class="hj-member"><div class="hj-avatar">阿</div>阿渡 健太（あわけん）<div class="role">パラアスリート</div></div>
+      <div class="hj-member"><div class="hj-avatar">柴</div>柴田 晃希<div class="role">義肢装具士</div></div>
+      <div class="hj-member"><div class="hj-avatar">大</div>大西 謙吾<div class="role">大学教授／エンジニア</div></div>
+    </div>
+  </section>
+
+  <footer class="hj-foot">
+    <div class="hj-wrap">
+      <div class="name">一般社団法人ハビリスジャパン</div>
+      <ul>
+        <li><a href="about.html">すぐ分かるHabilis</a></li>
+        <li><a href="activity.html">活動内容</a></li>
+        <li><a href="join-individuals.html">個人の方へ</a></li>
+        <li><a href="join-families.html">ご家族の方へ</a></li>
+        <li><a href="join-corporations.html">法人の方へ</a></li>
+        <li><a href="prosthesis.html">義肢とは</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+        <li><a href="member-policy.html">会員規約</a></li>
+      </ul>
+      <div class="copy">© Habilis Japan All Rights Reserved</div>
+    </div>
+  </footer>
+
+</div>
+<!-- ===== ここまで ===== -->

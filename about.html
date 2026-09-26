@@ -1,0 +1,266 @@
+<!-- ===== すぐ分かる Habilis Japan（about.html） ===== -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap');
+.hj { --ink:#1F2A44; --sky:#EAF4FB; --blue:#2E7FC1; --sun:#FFC93C; --leaf:#3FA66B;
+  font-family:'Zen Maru Gothic','Hiragino Maru Gothic ProN','Meiryo',sans-serif;
+  color:var(--ink); line-height:1.9; background:#fff; }
+.hj * { box-sizing:border-box; }
+.hj img { max-width:100%; height:auto; display:block; border-radius:24px; }
+.hj a { color:var(--blue); }
+.hj-wrap { max-width:1040px; margin:0 auto; padding:0 20px; }
+.hj-sec { padding:72px 0; }
+.hj h2 { font-size:clamp(1.5rem,3.5vw,2.1rem); font-weight:900; margin:0 0 24px; line-height:1.4; }
+.hj p { margin:0 0 1em; max-width:38em; }
+
+.hj-nav { display:flex; align-items:center; justify-content:space-between; padding:20px 0; }
+.hj-nav .logo { font-weight:900; font-size:1.05rem; text-decoration:none; color:var(--ink); }
+.hj-nav ul { list-style:none; display:flex; gap:24px; margin:0; padding:0; flex-wrap:wrap; }
+.hj-nav a:not(.logo) { text-decoration:none; color:var(--ink); font-weight:700; font-size:.92rem; }
+.hj-nav a:not(.logo):hover { color:var(--blue); }
+
+.hj-foot { background:#132038; color:#cfd8e3; padding:48px 0 28px; font-size:.85rem; }
+.hj-foot .name { color:#fff; font-weight:700; margin-bottom:16px; }
+.hj-foot ul { list-style:none; display:flex; flex-wrap:wrap; gap:16px 24px; margin:0 0 20px; padding:0; }
+.hj-foot a { color:#cfd8e3; text-decoration:none; }
+.hj-foot a:hover { color:#fff; }
+.hj-foot .copy { margin-top:24px; color:#7f8ba3; }
+
+/* ページヒーロー */
+.hj-pagehero { background:var(--sky); padding:56px 0 0; text-align:center; }
+.hj-pagehero h1 { font-size:clamp(1.8rem,5vw,2.8rem); font-weight:900; margin:0 0 32px; }
+.hj-pagehero img { border-radius:0; margin-top:8px; }
+
+/* Vision / Mission */
+.hj-vm { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:32px; }
+.hj-vm .card { background:var(--sky); border-radius:20px; padding:28px; }
+.hj-vm .eyebrow { font-weight:700; color:var(--blue); font-size:.9rem; margin-bottom:10px; }
+.hj-vm .big { font-size:1.15rem; font-weight:900; line-height:1.7; margin:0; }
+
+/* Values */
+.hj-values { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:28px; margin-top:32px; }
+.hj-values h3 { font-size:1.05rem; margin:0 0 8px; padding-left:14px; border-left:6px solid var(--sun); }
+.hj-values p { font-size:.92rem; }
+
+/* 背景（テキスト＋画像） */
+.hj-split { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; }
+@media (max-width:720px){ .hj-split { grid-template-columns:1fr; } }
+.hj-split.rev .img { order:2; }
+@media (max-width:720px){ .hj-split.rev .img { order:0; } }
+
+/* マップ */
+.hj-map { background:var(--sky); }
+.hj-maplist { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:24px; margin:32px 0 40px; }
+.hj-maplist .item { background:#fff; border-radius:16px; padding:22px; font-size:.92rem; }
+.hj-maplist .item b { display:block; margin-bottom:6px; }
+.hj-joinlinks { display:flex; gap:16px; flex-wrap:wrap; justify-content:center; }
+.hj-joinlinks a { display:flex; flex-direction:column; align-items:center; gap:10px; text-decoration:none;
+  background:#fff; border-radius:16px; padding:24px 28px; color:var(--ink); font-weight:700; min-width:140px; }
+.hj-joinlinks a:hover { box-shadow:0 8px 20px rgba(31,42,68,.12); }
+.hj-joinlinks .dot { width:46px; height:46px; border-radius:50%; background:var(--sky); display:flex; align-items:center; justify-content:center; font-size:1.3rem; }
+
+/* 活動内容 */
+.hj-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:28px; margin-top:32px; }
+.hj-list h3 { font-size:1.05rem; margin:12px 0 8px; padding-left:14px; border-left:6px solid var(--leaf); }
+.hj-list p { font-size:.9rem; }
+
+/* 参加する */
+.hj-join3 { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:28px; margin-top:32px; }
+.hj-join3 .card { text-align:center; }
+.hj-join3 h3 { font-size:1.05rem; margin:14px 0 8px; }
+.hj-join3 p { font-size:.9rem; margin:0 auto 14px; }
+
+/* メンバー */
+.hj-members { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:24px; margin-top:32px; }
+.hj-member { text-align:center; }
+.hj-avatar { width:100%; aspect-ratio:1; border-radius:50%; background:var(--sky); display:flex; align-items:center;
+  justify-content:center; font-size:1.6rem; font-weight:900; color:var(--blue); margin-bottom:10px; }
+.hj-member .role { font-size:.82rem; color:#5b6478; }
+
+.hj-cta-row { text-align:center; margin-top:32px; }
+.hj-link-more { display:inline-block; font-weight:700; text-decoration:none; color:var(--blue); border-bottom:2px solid var(--blue); padding-bottom:2px; }
+</style>
+
+<div class="hj">
+
+  <!-- ナビ -->
+  <nav class="hj-nav hj-wrap">
+    <a class="logo" href="index.html">Habilis Japan</a>
+    <ul>
+      <li><a href="about.html">すぐ分かるHabilis</a></li>
+      <li><a href="activity.html">活動内容</a></li>
+      <li><a href="prosthesis.html">義肢とは</a></li>
+      <li><a href="join-individuals.html">個人の方へ</a></li>
+      <li><a href="index.html#support">支援する</a></li>
+    </ul>
+  </nav>
+
+  <!-- ページヒーロー -->
+  <section class="hj-pagehero">
+    <div class="hj-wrap">
+      <h1>すぐ分かる Habilis Japan</h1>
+      <img src="https://placehold.co/1000x420/EAF4FB/1F2A44?text=Photo" alt="ボール遊びをする子どもたち">
+    </div>
+  </section>
+
+  <!-- Vision / Mission -->
+  <section class="hj-sec">
+    <div class="hj-wrap hj-vm">
+      <div class="card">
+        <div class="eyebrow">Habilis Vision</div>
+        <p class="big">すべての子どもたちが、自分らしさに誇りを持ち成長できる社会を</p>
+      </div>
+      <div class="card">
+        <div class="eyebrow">Habilis Mission</div>
+        <p class="big">手や足に特徴のある子どもたちに対する総合的な支援体制を築き、その成長と活動に“適した”環境を整える</p>
+      </div>
+    </div>
+
+    <div class="hj-wrap hj-values">
+      <div>
+        <h3>Smile &amp; Joy</h3>
+        <p>子どもたちの笑顔と、ワクワクを大切にします。</p>
+      </div>
+      <div>
+        <h3>Different-ability &amp; Diversity</h3>
+        <p>多様性を尊重しつつ、Disable（できない状態）をDifferent-ability（違った方法でできる）にする選択肢を提供します。</p>
+      </div>
+      <div>
+        <h3>Challenge &amp; Possibility</h3>
+        <p>子どもの“挑戦したい”心を育み、自ら可能性を広げられる機会を提供します。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 背景 -->
+  <section class="hj-sec">
+    <div class="hj-wrap hj-split">
+      <div class="img"><img src="https://placehold.co/600x400/EAF4FB/1F2A44?text=Photo" alt="医師と子どもの様子"></div>
+      <div>
+        <h2>背景</h2>
+        <p>様々なチャレンジや経験は成長過程の子どもたちの心身の発達に重要ですが、これに適した義足や義手があっても、日本の子どもたちはそれを使うことができません。</p>
+        <p>それは例えば、スポーツ場面で使われる義足や義手といった、運動するための失った手足の機能を補う道具が、日本では公的な保険や福祉の支援の対象となっていないからです。</p>
+        <p>私たちHabilis Japanの主たる事業は、「手や足に特徴のある子どもたちの、様々な場面での社会参加を実現すること」です。それぞれの活動場面で有効と考えられる義手・義足など特殊な道具を必要とする子どもたちへの、総合的な支援体制の確立を目指し、活動を行っています。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ハビリス・マップ -->
+  <section class="hj-sec hj-map">
+    <div class="hj-wrap">
+      <h2>ハビリス・マップ</h2>
+      <p>わたしたちは、子ども達の成長を支える皆様と共に、子ども達の「挑戦する気持ち」を育む小児用義肢の普及と、これを安全に使える環境づくりの実現を目指します。</p>
+
+      <div class="hj-maplist">
+        <div class="item"><b>お子様の成長サポート</b>イベント／体験会・義肢貸与・情報提供・社会参加支援　など</div>
+        <div class="item"><b>情報発信を通じて、支援の輪を広く</b>寄付による支援・体験会運営スタッフ　など</div>
+        <div class="item"><b>双方向コミュニケーション</b>日常生活における義肢活用情報を、ご家族同士や専門職が共有し、ピアサポートや義肢研究開発に活用</div>
+        <div class="item"><b>義肢研究開発の協議</b>ご家族からのニーズや体験会で得られた情報を活かした、義肢関連部品の研究開発　など</div>
+      </div>
+
+      <div class="hj-joinlinks">
+        <a href="join-families.html"><span class="dot">👪</span>ご家族の方へ</a>
+        <a href="join-individuals.html"><span class="dot">🙋</span>個人の方へ</a>
+        <a href="join-corporations.html"><span class="dot">🏢</span>法人の方へ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 活動内容 -->
+  <section class="hj-sec">
+    <div class="hj-wrap">
+      <h2>活動内容</h2>
+      <p>Habilis Japanは、子ども達の成長を支え、その未来を育む支援をしている団体です。4つの事業を軸に、子どもたちが様々なことに挑戦できるよう活動しています。医療機関や関係諸団体と連携しながら、義手・義足を使う子ども達がのびのびと活動できるイベントの開催や、アクティビティをサポートできる機能を持つ義肢を、適切な時期に必要とする子ども達に貸与するレンタル事業等に取り組んでいます。</p>
+
+      <div class="hj-list">
+        <div>
+          <img src="https://placehold.co/500x340/EAF4FB/1F2A44?text=Photo" alt="ボール遊びする子どもたち">
+          <h3>イベント</h3>
+          <p>手足に特徴のある子どもたちを対象にさまざまなイベントを開催しています。</p>
+        </div>
+        <div>
+          <img src="https://placehold.co/500x340/EAF4FB/1F2A44?text=Photo" alt="鉄棒をする男の子">
+          <h3>義肢貸与</h3>
+          <p>子どもたちの挑戦をサポートできる、運動用義手のレンタルを行っています。</p>
+        </div>
+        <div>
+          <img src="https://placehold.co/500x340/EAF4FB/1F2A44?text=Photo" alt="絵本">
+          <h3>教育・啓発</h3>
+          <p>情報共有・交換を目的に、セミナーや絵本作成等を通して教育・啓発活動を行っています。</p>
+        </div>
+        <div>
+          <img src="https://placehold.co/500x340/EAF4FB/1F2A44?text=Photo" alt="ボランティアの様子">
+          <h3>開発・調査</h3>
+          <p>ご家族より寄せられたニーズや、体験会等で得られた情報を活かして、義肢関連部品の研究開発を行います。</p>
+        </div>
+      </div>
+      <div class="hj-cta-row"><a class="hj-link-more" href="activity.html">もっと詳しく</a></div>
+    </div>
+  </section>
+
+  <!-- ハビリスに参加する -->
+  <section class="hj-sec hj-map">
+    <div class="hj-wrap">
+      <h2>ハビリスに参加する</h2>
+      <p>Habilis Japanには、様々な形で参加することができます。当事者としてイベント参加や義肢レンタル利用を行っていただくことはもちろん、子ども達の成長を支援する立場としてご参加いただくことも可能です。皆様のご参加を心よりお待ちしております。</p>
+
+      <div class="hj-join3">
+        <div class="card">
+          <h3>家族会員</h3>
+          <p>家族向け会員制度「ファミリーメンバー」にご登録いただくことで、様々な特典をご利用いただくとともに、Habilis Japanの活動をご支援いただくことができます。</p>
+          <a class="hj-link-more" href="join-families.html">ご家族の方へ</a>
+        </div>
+        <div class="card">
+          <h3>イベント参加</h3>
+          <p>定期的に開催している運動教室や料理教室といったHabilis Japanのイベントにご参加いただくことができます。</p>
+          <a class="hj-link-more" href="https://habilisjapan.peatix.com/" target="_blank" rel="noopener">イベントに参加する</a>
+        </div>
+        <div class="card">
+          <h3>ボランティア</h3>
+          <p>Habilis Japanの活動を一緒にサポートしてくださる方を広く募集しております。関わり方は様々ですので、お気軽にお問い合わせください。</p>
+          <a class="hj-link-more" href="#">ボランティア登録</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- メンバー -->
+  <section class="hj-sec">
+    <div class="hj-wrap">
+      <h2>ハビリス・メンバーズ</h2>
+      <p>Habilis JapanはVisionに共感したメンバーと、義肢を専門領域に持つ医師・セラピスト・義肢装具士のスタッフが参加し、活動を行っています。</p>
+
+      <div class="hj-members">
+        <div class="hj-member"><div class="hj-avatar">藤</div>藤原 清香（さーちゃん）<div class="role">医師</div></div>
+        <div class="hj-member"><div class="hj-avatar">野</div>野口 智子（ぐっさん）<div class="role">作業療法士</div></div>
+        <div class="hj-member"><div class="hj-avatar">岡</div>岡田 航太（おかでぃ）<div class="role">保険商品開発</div></div>
+        <div class="hj-member"><div class="hj-avatar">大</div>大西 謙吾<div class="role">大学教授／エンジニア</div></div>
+        <div class="hj-member"><div class="hj-avatar">柴</div>柴田 晃希<div class="role">義肢装具士</div></div>
+        <div class="hj-member"><div class="hj-avatar">阿</div>阿渡 健太（あわけん）<div class="role">パラアスリート</div></div>
+      </div>
+      <div class="hj-cta-row"><a class="hj-link-more" href="organization-members.html">もっと見る</a></div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="hj-foot">
+    <div class="hj-wrap">
+      <div class="name">一般社団法人ハビリスジャパン</div>
+      <ul>
+        <li><a href="about.html">すぐ分かるHabilis</a></li>
+        <li><a href="activity.html">活動内容</a></li>
+        <li><a href="join-individuals.html">個人の方へ</a></li>
+        <li><a href="join-families.html">ご家族の方へ</a></li>
+        <li><a href="join-corporations.html">法人の方へ</a></li>
+        <li><a href="prosthesis.html">義肢とは</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+        <li><a href="member-policy.html">会員規約</a></li>
+        <li><a href="https://www.facebook.com/habilisjapan/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/habilisjapan/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+      <div class="copy">© Habilis Japan All Rights Reserved</div>
+    </div>
+  </footer>
+
+</div>
+<!-- ===== ここまで ===== -->
